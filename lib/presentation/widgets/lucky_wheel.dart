@@ -85,12 +85,12 @@ class _LuckyWheelState extends State<LuckyWheel> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     _rotationController = AnimationController(
-      duration: const Duration(seconds: 3),
+      duration: const Duration(seconds: 5),
       vsync: this,
     );
 
     _bounceController = AnimationController(
-      duration: const Duration(milliseconds: 500),
+      duration: const Duration(seconds: 1),
       vsync: this,
     );
 
