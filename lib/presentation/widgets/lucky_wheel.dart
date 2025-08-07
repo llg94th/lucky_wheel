@@ -360,41 +360,6 @@ class _LuckyWheelState extends State<LuckyWheel> with TickerProviderStateMixin {
 
             const SizedBox(height: 40),
 
-            // Prize info
-            Container(
-              padding: const EdgeInsets.all(16),
-              margin: const EdgeInsets.symmetric(horizontal: 20),
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.9),
-                borderRadius: BorderRadius.circular(12),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
-                    blurRadius: 5,
-                    spreadRadius: 1,
-                  ),
-                ],
-              ),
-              child: Column(
-                children: [
-                  Text(
-                    '🎁 Giải thưởng có sẵn:',
-                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'iPhone 15 Pro • MacBook Pro • AirPods Pro • iPad Pro • Apple Watch • Voucher 500k • Voucher 1M',
-                    style: Theme.of(context).textTheme.bodySmall,
-                    textAlign: TextAlign.center,
-                  ),
-                ],
-              ),
-            ),
-
-            const SizedBox(height: 30),
-
             // Scenario dropdown
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20),
